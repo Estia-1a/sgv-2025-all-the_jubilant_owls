@@ -29,6 +29,23 @@ header nav{
 /*fin commun à chaque page*/
 
 
+/*style page liste produit*/
+#brocoli {
+    border: thin red solid ;
+    display: flex;
+    align-items: center;
+    
+}
+
+#brocoli .nom {
+    border: thin blue solid;
+
+}
+#brocoli .deroule {
+    border: thin green solid;
+}
+/*fin style liste produit*/
+
 /*style page réservation*/
 
 
