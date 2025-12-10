@@ -30,20 +30,6 @@ header nav{
 
 
 /*style page liste produit*/
-#brocoli {
-    border: thin red solid ;
-    display: flex;
-    align-items: center;
-    
-}
-
-#brocoli .nom {
-    border: thin blue solid;
-
-}
-#brocoli .deroule {
-    border: thin green solid;
-}
 
 .category {
     border: 2px solid #000;
@@ -52,7 +38,7 @@ header nav{
 }
 
 /* Bandeau cliquable */
-.header {
+.legumes {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,11 +46,57 @@ header nav{
     gap: 10px;
 }
 
-.icon {
+.legumes-img {
     width: 60px;
     height: 60px;
     border: 2px solid #000;
 }
+
+/* Bloc produit */
+.produits {
+    display: flex;
+    align-items: center;
+    border: 2px solid #000;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.brocoli-img {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #000;
+    margin-right: 10px;
+}
+
+.brocoli {
+    flex: 1;
+}
+
+/* Zone compteur */
+.counter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    background: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.number {
+    width: 30px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 5px 0;
+}
+
 
 /*fin style liste produit*/
 
