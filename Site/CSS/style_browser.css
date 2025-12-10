@@ -26,6 +26,10 @@ header nav{
     gap: 80px;
 }
 
+.search-container{
+    border: thin grey solid;
+    
+}
 /*fin commun à chaque page*/
 
 

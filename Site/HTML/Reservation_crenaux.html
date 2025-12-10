@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style_browser.css" media="screen and (min-width: 768px)"> 
     <link rel="stylesheet" href="../CSS/style_mobile.css" media="screen and (max-width: 767px)"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -12,9 +13,19 @@
         <img src="../Image/Designer.png" alt="logo du maraîcher">
         <nav>
             <a href="Liste_produit.html">Liste des produits</a>
+                <div class="search-container">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
             <a href="">Histoire</a>
             <a href="">Pratique</a>
         </nav>
+        <div>
+            <a href=""><img src="../Image/connect-icone.png" alt="connexion"></a>
+            <a href=""><img src="../Image/panier.png" alt="panier"></a>
+        </div>
     </header>
     <main>
         <h1>Réserver un créneau</title>
