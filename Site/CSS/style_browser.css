@@ -1,0 +1,52 @@
+/*commun à chaque page*/
+
+header{
+    border: thin red solid;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header img{
+    border: thin purple solid;
+    margin-top: 10px;
+    margin-bottom: 10PX;
+    width: 100px;
+    height: auto;
+}
+
+header nav{
+    border: thin brown solid;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+/*fin commun à chaque page*/
+
+
+/*style page liste produit*/
+#brocoli {
+    border: thin red solid ;
+    display: flex;
+    align-items: center;
+    
+}
+
+#brocoli .nom {
+    border: thin blue solid;
+
+}
+#brocoli .deroule {
+    border: thin green solid;
+}
+/*fin style liste produit*/
+
+/*style page réservation*/
+
+
+/*fin style page réservation*/
