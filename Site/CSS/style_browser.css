@@ -6,13 +6,28 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
-header img{
+
+#logo{
     border: thin purple solid;
-    margin-top: 10px;
-    margin-bottom: 10PX;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-right: 25%;
     width: 100px;
+    height: auto;
+}
+
+#cliquable{
+    border: thin pink solid;
+    display: flex;
+    flex-direction: row;
+    margin-left: 25%;
+}
+
+#cliquable img{
+    width: 30px;
     height: auto;
 }
 
