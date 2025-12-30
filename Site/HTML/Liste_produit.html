@@ -8,6 +8,27 @@
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <img id="logo" src="../Image/Designer.png" alt="logo du maraîcher">
+        <nav>
+            <a href="Liste_produit.html">Produits</a>
+                <div class="search-container">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Tomates,pommes,.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            <a href="">Histoire</a>
+            <a href="">Pratique</a>
+        </nav>
+        <div id="cliquable">
+            <a id="connexion" href=""><img src="../Image/connect-icone.png"></a>
+            <a id="panier" href=""><img src="../Image/panier.png"></a>
+            
+        </div>
+    </header>
+
+    </header>
     <main>
         <details class="category">
             <summary class="legumes" style="--bg: url('../Image/legumes.jpg')">
@@ -20,12 +41,39 @@
                     <strong>Brocoli</strong><br>
                     Description du légume…
                 </div>
+                <div class="counter">
+                   <button class="btn">+</button>
+                   <span class="number">0</span>
+                   <button class="btn">-</button>
+                </div>
             </div>
-            <div class="counter">
-                <button class="bouton">-</button>
-                <span class="number">0</span>
-                <button class="btn">+</button>
+            
+            <div class="produits">
+                <img class="brocoli-img" src="../Image/courgette.jpg" alt="Courgette">
+                <div class="brocoli">
+                    <strong>Courgette</strong><br>
+                    Description du légume…
+                </div>
+                <div class="counter">
+                   <button class="btn">+</button>
+                   <span class="number">0</span>
+                   <button class="btn">-</button>
+                </div>
             </div>
+
+            <div class="produits">
+                <img class="brocoli-img" src="../Image/carotte.jpg" alt="Carotte">
+                <div class="brocoli">
+                    <strong>Carotte</strong><br>
+                    Description du légume…
+                </div>
+                <div class="counter">
+                   <button class="btn">+</button>
+                   <span class="number">0</span>
+                   <button class="btn">-</button>
+                </div>
+            </div>
+
         </details>
         <details class="category">
             <summary class="legumes" style="--bg: url('../Image/Fruits.jpg')">
@@ -38,11 +86,63 @@
                     <strong>Poire</strong><br>
                     Description du fruit…
                 </div>
+                <div class="counter">
+                   <button class="btn">+</button>
+                   <span class="number">0</span>
+                   <button class="btn">-</button>
+                </div>    
             </div>
-            <div class="counter">
-                <button class="bouton">-</button>
-                <span class="number">0</span>
-                <button class="btn">+</button>
+
+            <div class="produits">
+                <img class="brocoli-img" src="../Image/cherry.jpg" alt="Cerise">
+                <div class="brocoli">
+                    <strong>Cerise</strong><br>
+                    Description du fruit…
+                </div>
+                <div class="counter">
+                   <button class="btn">+</button>
+                   <span class="number">0</span>
+                   <button class="btn">-</button>
+                </div>
+            </div>
+
+            <div class="produits">
+                <img class="brocoli-img" src="../Image/figue.jpg" alt="Figue">
+                <div class="brocoli">
+                    <strong>Figue</strong><br>
+                    Description du fruit…
+                </div>
+                <div class="counter">
+                   <button class="btn">+</button>
+                   <span class="number">0</span>
+                   <button class="btn">-</button>
+                </div>
+            </div>
+
+            <div class="produits">
+                <img class="brocoli-img" src="../Image/kiwi.jpg" alt="Kiwi">
+                <div class="brocoli">
+                    <strong>Kiwi</strong><br>
+                    Description du fruit…
+                </div>
+                <div class="counter">
+                   <button class="btn">+</button>
+                   <span class="number">0</span>
+                   <button class="btn">-</button>
+                </div>
+            </div>
+
+            <div class="produits">
+                <img class="brocoli-img" src="../Image/abricot.jpg" alt="Abricot">
+                <div class="brocoli">
+                    <strong>Abricot</strong><br>
+                    Description du fruit…
+                </div>
+                <div class="counter">
+                   <button class="btn">+</button>
+                   <span class="number">0</span>
+                   <button class="btn">-</button>
+                </div>
             </div>
         </details>
     </main>
