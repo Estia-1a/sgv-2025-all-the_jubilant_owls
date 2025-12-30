@@ -3,46 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/style_browser.css" media="screen and (min-width: 768px)"> 
-    <link rel="stylesheet" href="../CSS/style_mobile.css" media="screen and (max-width: 767px)"> 
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/style_browser.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="../CSS/style_mobile.css" media="screen and (max-width: 767px)">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
+
+    <title>Réservation de créneau</title>
 </head>
+
 <body>
-    <header>
-        <img id="logo" src="../Image/Designer.png" alt="logo du maraîcher">
-        <nav>
-            <a href="Liste_produit.html">Produits</a>
-                <div class="search-container">
-                    <form action="/action_page.php">
-                        <input type="text" placeholder="Tomates,pommes,.." name="search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                    </form>
-                </div>
-            <a href="">Histoire</a>
-            <a href="">Pratique</a>
-        </nav>
-        <div id="cliquable">
-            <a id="connexion" href=""><img src="../Image/connect-icone.png"></a>
-            <a id="panier" href=""><img src="../Image/panier.png"></a>
-            
-        </div>
-    </header>
-    <main>
-        <h1>Réserver un créneau</title>
-        <h2>Choisissez un créneau pour récupérer votre commande</h2>
-        <form>
-            <label for="pickup-time">Horaire de récupération :</label><br><br>
-            <input type="time" id="pickup-time" name="pickup-time" required>
-            <label for="date">Choisissez une date :</label>
-            <input type="date" id="date" name="date">
-            <br><br>
-            <button type="submit">Valider</button></label>
+
+<header>
+    <img id="logo" src="../Image/Designer.png" alt="Logo du maraîcher">
+
+    <nav>
+        <a href="Liste_produit.html">Produits</a>
+
+        <form class="search-container" action="#" method="get">
+            <input type="text" placeholder="Tomates, pommes..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
         </form>
 
-        <div>
+        <a href="#">Histoire</a>
+        <a href="#">Pratique</a>
+    </nav>
 
-        </div>
-    </main>
+    <div id="cliquable">
+        <a href="#"><img src="../Image/connect-icone.png" alt="Connexion"></a>
+        <a href="#"><img src="../Image/panier.png" alt="Panier"></a>
+    </div>
+</header>
+
+<main>
+    <h1>Réserver un créneau</h1>
+    <h2>Choisissez un créneau pour récupérer votre commande</h2>
+
+    <form class="reservation-form">
+
+        <label for="date">Date de retrait</label>
+        <input type="date" id="date" name="date" required>
+
+        <fieldset>
+            <legend>Créneaux disponibles</legend>
+
+            <div class="slots">
+                <input type="radio" id="slot1" name="slot" required>
+                <label for="slot1">09h00 – 10h00</label>
+
+                <input type="radio" id="slot2" name="slot">
+                <label for="slot2">10h00 – 11h00</label>
+
+                <input type="radio" id="slot3" name="slot">
+                <label for="slot3">11h00 – 12h00</label>
+
+                <input type="radio" id="slot4" name="slot">
+                <label for="slot4">14h00 – 15h00</label>
+
+                <input type="radio" id="slot5" name="slot">
+                <label for="slot5">15h00 – 16h00</label>
+
+                <input type="radio" id="slot5" name="slot">
+                <label for="slot5">16h00 – 17h00</label>
+            </div>
+        </fieldset>
+
+        <button type="submit">Valider la réservation</button>
+
+    </form>
+</main>
+
+<footer>
+    <p>© 2025 – Maraîcher local</p>
+</footer>
+
 </body>
 </html>
