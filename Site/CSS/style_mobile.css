@@ -219,3 +219,33 @@ button {
 }
 
 /*fin style liste produit*/
+
+/* PAGE ACCUEIL (index) */
+
+
+.welcome {
+    margin: 40px 15px;
+    padding: 25px 20px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+}
+
+.welcome h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #3a7d44;
+}
+
+.welcome p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.welcome .links a {
+    display: block;
+    margin: 12px 0;
+    font-weight: bold;
+    color: #2f6f3e;
+    text-decoration: none;
+}
