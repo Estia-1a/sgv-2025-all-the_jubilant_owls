@@ -1,50 +1,72 @@
 /*commun à chaque page*/
+/* RESET SIMPLE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
-header{
-    border: thin red solid;
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3a7d44;
+    padding: 15px 30px;
+}
+
+#logo {
+    height: 60px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
     text-align: center;
+    height: 30px;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-
-#logo{
-    border: thin purple solid;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    margin-right: 25%;
-    width: 100px;
-    height: auto;
-}
-
-#cliquable{
-    border: thin pink solid;
+.search-container {
     display: flex;
-    flex-direction: row;
-    margin-left: 25%;
+    height: 23px;
 }
 
-#cliquable img{
-    width: 30px;
-    height: auto;
+.search-container input {
+    flex:9;
+    border-radius: 6px;
+    padding: 4px 6px;
 }
 
-header nav{
-    border: thin brown solid;
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
+.search-container button {
+    flex:1;
+    padding: 6px 10px;
+    background-color: #2e6236;
+    color: white;
+    cursor: pointer;
 }
 
-.search-container{
-    border: thin grey solid;
-    
+#cliquable img {
+    height: 30px;
+    margin-left: 15px;
 }
+
+
 /*fin commun à chaque page*/
 
 
@@ -139,6 +161,95 @@ header nav{
 
 /*style page réservation*/
 
+
+/* MAIN */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+/* FORM */
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input[type="date"] {
+    padding: 10px;
+    width: 200px;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* SLOTS */
+.slots {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.slots input {
+    display: none;
+}
+
+.slots label {
+    padding: 15px;
+    text-align: center;
+    border: 2px solid #3a7d44;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.slots input:checked + label {
+    background-color: #3a7d44;
+    color: white;
+}
+
+/* BUTTON */
+button[type="submit"] {
+    width: 250px;
+    padding: 15px;
+    align-self: center;
+    background-color: #3a7d44;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2e6236;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    margin: 30px 0;
+    color: #777;
+}
 
 /*fin style page réservation*/
 
