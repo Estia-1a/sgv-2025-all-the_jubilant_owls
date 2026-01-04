@@ -374,4 +374,38 @@ button:hover {
 /*fin style page réservation*/
 
 
-/* Cadre principal */
+/* PAGE ACCUEIL (index) */
+
+.welcome {
+    max-width: 800px;
+    margin: 80px auto;
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.welcome h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #3a7d44;
+}
+
+.welcome p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.welcome .links a {
+    display: inline-block;
+    margin: 10px 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #2f6f3e;
+}
+
+.welcome .links a:hover {
+    text-decoration: underline;
+}
