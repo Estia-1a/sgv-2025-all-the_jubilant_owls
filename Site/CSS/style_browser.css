@@ -71,90 +71,109 @@ nav a {
 
 
 /*style page liste produit*/
-
 .category {
-    border: 2px solid #000;
-    margin-bottom: 20px;
-    padding: 10px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
-/* Bandeau cliquable */
-.legumes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    height: 150px; /* <-- hauteur du panneau image */
-    position: relative;
-    padding: 0 16px;
-
-    /* image de fond passée depuis le HTML */
+.category-header {
+    height: 180px;
     background-image: var(--bg);
-    background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    cursor: pointer;
     color: white;
-    font-size: 1.7rem;
-    font-weight: 700;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+    position: relative;
 }
 
-.legumes-img {
-    width: 60px;
-    height: 60px;
-    border: 2px solid #000;
+.category-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
 }
+
+.category-header h2,
+.toggle {
+    position: relative;
+    z-index: 2;
+}
+
+.toggle {
+    font-size: 1.6rem;
+}
+
+.category[open] .toggle {
+    transform: rotate(180deg);
+}
+
 
 /* Bloc produit */
+/* PRODUCTS */
 .produits {
-    display: flex;
+    display: grid;
+    grid-template-columns: 80px 1fr auto;
+    gap: 20px;
+    padding: 20px 25px;
+    border-top: 1px solid #e0e0e0;
     align-items: center;
-    border: 2px solid #000;
-    margin-top: 20px;
-    padding: 15px;
 }
 
-.brocoli-img {
-    width: 50px;
-    height: 50px;
-    border: 2px solid #000;
-    margin-right: 10px;
+.produits img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
-.brocoli {
-    flex: 1;
+.info-produit p {
+    font-size: 0.9rem;
+    color: #666;
 }
 
-/* Zone compteur */
-.counter {
+.acheter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.prix {
+    font-weight: bold;
+}
+
+.quantité {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.btn {
-    width: 40px;
-    height: 40px;
+.quantité button {
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
-    border: 2px solid #000;
-    background: white;
-    font-size: 24px;
-    cursor: pointer;
+    border: none;
+    background: #2f6f3e;
+    color: white;
+    font-size: 20px;
 }
 
-.number {
-    width: 30px;
+.quantité span {
+    min-width: 24px;
     text-align: center;
-    display: inline-block;
-    border: 1px solid #000;
-    padding: 5px 0;
+    font-weight: bold;
 }
 
-.summary-label {
-    position: relative;
-    z-index: 2; /* au-dessus de l'image */
-}
+
+
+
 
 
 /*fin style liste produit*/
