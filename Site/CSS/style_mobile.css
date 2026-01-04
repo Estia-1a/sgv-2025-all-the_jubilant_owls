@@ -110,3 +110,112 @@ button {
     border: none;
     border-radius: 6px;
 }
+
+
+/*style page liste produit*/
+
+.category {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.category-header {
+    height: 120px;
+    background-image: var(--bg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    color: white;
+    position: relative;
+}
+
+.category-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+}
+
+.category-header h2,
+.toggle {
+    position: relative;
+    z-index: 2;
+}
+
+/* PRODUITS MOBILE */
+.produits {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 15px;
+    border-top: 1px solid #e0e0e0;
+    align-items: center;
+    text-align: center;
+}
+
+.produits img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Achat */
+.acheter {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+/* Indisponible */
+.produits.indisponible {
+    opacity: 0.5;
+    position: relative;
+}
+
+.produits.indisponible .acheter {
+    display: none;
+}
+
+.badge {
+    background: #b00020;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.cta-btn {
+    width: 90%;
+}
+
+/* INFOS */
+.infos {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 30px 15px;
+}
+
+/*fin style liste produit*/
