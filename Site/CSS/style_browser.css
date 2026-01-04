@@ -171,7 +171,114 @@ nav a {
     font-weight: bold;
 }
 
+/* CTA */
+.cta {
+    text-align: center;
+    margin: 50px 0;
+}
 
+.cta-btn {
+    padding: 15px 40px;
+    border-radius: 30px;
+    background: #2f6f3e;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+}
+
+/* INFOS */
+.infos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1000px;
+    margin: 60px auto;
+    text-align: center;
+    gap: 30px;
+}
+
+.info-item i {
+    font-size: 32px;
+    color: #2f6f3e;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+.footer {
+    background: #2f6f3e;
+    color: white;
+    padding: 40px 20px 20px;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.produits.indisponible {
+    opacity: 0.5;
+    position: relative;
+}
+
+.produits.indisponible .quantité,
+.produits.indisponible .acheter {
+    display: none;
+}
+
+.badge {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: #b00020;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+
+.quantité button {
+    cursor: pointer;
+    transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.quantité button:hover {
+    background: #245a32;
+    transform: scale(1.1);
+}
+
+.quantité button:active {
+    transform: scale(0.95);
+}
+
+.cta-btn {
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.cta-btn:hover {
+    background: #245a32;
+    transform: translateY(-2px);
+}
+
+.cta-btn:active {
+    transform: translateY(0);
+}
 
 
 
